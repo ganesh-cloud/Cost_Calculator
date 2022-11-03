@@ -1,0 +1,179 @@
+*{
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 550;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ----------body-------- */
+body{
+  padding: 1em 0 1em 0em;
+  width: 100%;
+  height: 100vh;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #139eee 0%, #6ce1d2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* -------head------ */
+#head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+img{
+  width: 41px;
+  height: 41px;
+}
+h1{
+  font-size: 25px;
+}
+
+/* ----------form--------*/
+
+form{
+    align-items: center;
+    background-color: #e0e2e6;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    justify-content: center;
+    padding: 3em 0.5em;
+    width: 400px;
+    align-items: center;
+    border: solid 1.2px #e0e2e6;
+}
+
+input{
+    text-indent: 15px;
+    margin-top: 0.6em;
+    width: 18em;
+    height: 2.1em;
+    border-radius: 0.3em;
+    border: solid 1.8px #0093E9;
+    background-color: transparent;
+}
+
+input::placeholder{
+    text-indent: 15px;
+}
+input:focus{
+   outline: none;
+}
+
+/* -----------button--------- */
+
+button {
+  margin-top: 1.2em;
+  padding: 10px 50px;
+  color: #efefef;
+  border-radius:25px;
+  background-color: #0093E9;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #0797eb radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #139ae8;
+  background-size: 100%;
+  transition: background 0s;
+}
+/*-----------FCR and Cost--------*/
+
+#ans{
+    width: 90%;
+    margin-top: 1.5em;
+    display: flex;
+    color: #efefef;
+    justify-content: space-between;
+}
+#ans1,#ans2{
+    border-radius:10px;
+    background-color: #0093E9;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+/*------------maintain-design-------*/ 
+#maintain{
+  text-align: center;
+  font-size: 17px;
+  color: #0093E9;
+  margin-top: 15px;
+}
+
+/*---------footer-----------*/
+footer{
+  position: relative;
+  top: 8px;
+  color: rgb(255, 255, 255);
+ }
+ i{
+  font-size: 25px;
+ }
+ .fa-instagram{
+  color:#E1306C;
+ }  
+ .fa-twitter{
+  color:#1D9BF0;
+ }
+ .fa-whatsapp{
+  color:#075E54;
+ }
+ 
+/*------------for mobile-devices--------*/
+@media screen and (max-width:575px) {
+  input{
+    font-weight: 500;
+  }
+  body{
+    min-height: 680px;
+  }
+   form{
+    width: 320px;
+    margin: 2em 5em;
+    position: relative;
+    margin-top: -30px;
+   }
+   input{
+    width: 15em;
+   }
+   #ans1,#ans2{
+    padding: 1em 3em;
+   }
+   #head{
+    position: relative;
+    top: -25px;
+   }
+   footer{
+    text-align: center;
+    position: relative;
+    top: -28px;
+   }
+}
